@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    padding: 0 2rem;
+}
+
+/* navbar */
+
+.navbar{
+    background-color: #dce6ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+
+.logo{
+    margin-top: 90px;
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.links ul{
+    display: flex;
+    
+}
+.links ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+.links ul li a img:first-child{
+width: 25px;
+padding-right: 10px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    font-weight: 600;
+}
+.links .fa-comments,
+.fa-power-off{
+    padding-right: 10px;
+}
+/* End navbar */
+/* body-section */
+.body-section{
+    display: flex;
+}
+/* End body-section */
+
+
+/* sidebar */
+.sidebar{
+    margin-top: 80px;
+    padding-top: 10px;
+    width: 200px;
+    background-color:#143890 ;
+    height: min-content;
+}
+
+.sidebar ul{
+    list-style: none;
+    text-align: center;
+}
+.sidebar ul li{
+    padding: 5px 0;
+    position: relative;
+}
+.sidebar ul li ::after{
+    content: '';
+    background-color: #dce6ef;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.sidebar ul li a{
+    color: #dce6ef;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+/* End sidebar */
+
+/* contect Section  */
+.content{
+    padding: 50px ;
+    width: 900px;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h1{
+    color: #143890;
+    font-size: 50px;
+}
+.header-content h1 span{
+    color: #cabf74;
+}
+.header-content p{
+    color: #143890;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 250px;
+}
+.header-content p span{
+    color: #cabf74;
+}
+
+.grid-container{
+    margin-top: 10px;
+    display: inline-grid;
+    gap:5px;
+    grid-template-columns: 1fr 1fr ;
+}
+.item{
+    
+    background-color: #dce6ef;
+    width: 400px;
+    height: 50px;
+}
+.item:last-child{
+    position: relative;
+}
+.item:last-child h3{
+    color: #143890;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.item:last-child .fa-magnifying-glass{
+
+    font-size: 30px;
+    color: #143890;
+    position: absolute;
+    top: 10px;
+    left: 125px;
+}
+
+/* two cards */
+.two-cards-container{
+    text-align: center;
+    margin-top: 100px;
+    display: inline-grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr ;
+    
+}
+.two-cards-container .card{
+    background-color: #dce6ef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    
+}
+.two-cards-container .card h3{
+    color: #143890;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.two-cards-container .card p{
+    font-size:20px ;
+    font-weight: 500;
+}
+
+/* End two cards */
+
+/* search container */
+.search-container{
+    margin: 30px auto;
+    padding: 25px;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.search-container h1{
+    padding-bottom: 20px;
+}
+.search-container ul li{
+    list-style: none;
+    margin: 30px 0;
+
+}
+.search-container ul li:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #60d1a6;
+    padding: 15px 0;
+    border-radius: 5px;
+    
+}
+.search-container ul li:last-child:hover{
+    cursor: pointer;
+}
+.search-container ul li:last-child .fa-magnifying-glass{
+    color: #fff;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.search-container ul li:last-child button{
+    color: #fff;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.form-label{
+    display: flex;
+    border: 1px solid grey;
+    align-items: center;
+    padding: 10px;
+}
+.form-label .fa-location-dot,
+.fa-calendar-days,
+.fa-people-group
+,.fa-flag{
+    font-size: 30px;
+    padding: 15px;
+    color: #143890;
+
+}
+.form-control h4{
+    color: grey;
+}
+.form-control input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    width: 500px;
+}
+/* end search container */
+
+
+/* End contect Section  */
