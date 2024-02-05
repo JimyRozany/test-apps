@@ -22,9 +22,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- icons from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -93,16 +95,46 @@
                   alt=""
                 />
               </div>
-              <p class="user-name">user name</p>
+              <p class="user-name">Ahmed Ali</p>
             </div>
             <hr />
             <ul>
               <a href="#">
-                <li>
+                <li id="signup">
                   <div class="list-item">
                     <div class="icon-and-text">
                       <div class="list-item-icon">
                         <img src="./assets/images/icons/user.png" alt="" />
+                      </div>
+                      <p>Sign-Up</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li id="login">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/gear.png" alt="" />
+                      </div>
+                      <p>Login</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li id="edit-profile">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/mark.png" alt="" />
                       </div>
                       <p>Edit Profile</p>
                     </div>
@@ -113,37 +145,7 @@
                 </li>
               </a>
               <a href="#">
-                <li>
-                  <div class="list-item">
-                    <div class="icon-and-text">
-                      <div class="list-item-icon">
-                        <img src="./assets/images/icons/gear.png" alt="" />
-                      </div>
-                      <p>Settings & Privacy</p>
-                    </div>
-                    <div class="arrow-icon">
-                      <img src="./assets/images/icons/right-arrow.png" alt="" />
-                    </div>
-                  </div>
-                </li>
-              </a>
-              <a href="#">
-                <li>
-                  <div class="list-item">
-                    <div class="icon-and-text">
-                      <div class="list-item-icon">
-                        <img src="./assets/images/icons/mark.png" alt="" />
-                      </div>
-                      <p>Help & Support</p>
-                    </div>
-                    <div class="arrow-icon">
-                      <img src="./assets/images/icons/right-arrow.png" alt="" />
-                    </div>
-                  </div>
-                </li>
-              </a>
-              <a href="#">
-                <li>
+                <li id="setting-privacy">
                   <div class="list-item">
                     <div class="icon-and-text">
                       <div class="list-item-icon">
@@ -152,7 +154,7 @@
                           alt=""
                         />
                       </div>
-                      <p>Display & Accessibility</p>
+                      <p>Setting & Privacy</p>
                     </div>
                     <div class="arrow-icon">
                       <img src="./assets/images/icons/right-arrow.png" alt="" />
@@ -191,6 +193,183 @@
         </div>
       </div>
     </header>
+<!-- container cards  -->
+<div class="container-cards" id="container-cards">
+  <!-- Sign-Up -->
+  <div class="sign-up-container" id="sign-up-container">
+    <div class="form-header"><p>Sign Up</p></div>
+    <div class="form">
+      <form>
+        <div class="form-input">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Name">
+        </div>
+        <div class="form-input">
+          <i class="fa-solid fa-envelope-open"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="form-input password-field">
+          <div class="password-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+          </div>
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" name="agree-terms" id="agree-terms">
+          <label for="agree-terms">i read and agree to <span>Terms & Conditions</span></label>
+        </div>
+        <div class="submit-btn">
+          <button  type="submit">Create Account</button>
+        </div>
+      </form>
+      <div class="form-footer"><p>Already have an account? </p><a href="#">Sign in</a></div>
+    </div>
+    <div class="close-card" id="close-signup-card">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+  <!--  ******* Sign-Up ******** -->
+  <!-- login card -->
+  <div class="login-container" id="login-container">
+    <div class="form-header"><p>Login</p></div>
+    <div class="form">
+      <form>
+        
+        <div class="form-input">
+          <i class="fa-solid fa-envelope-open"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="form-input password-field">
+          <div class="password-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+          </div>
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="submit-btn">
+          <button  type="submit">Login</button>
+        </div>
+      </form>
+      <div class="form-footer"><p>i dont have an account ! </p><a href="#">Sign Up</a></div>
+    </div>
+    <div class="close-card" id="close-login-card">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+  <!--  ******* login card ******** -->
+  <!-- edit profile card -->
+  <div class="edit-profile-container" id="edit-profile-container">
+    <div class="card-header">
+      <div class="user-image">
+        <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+      </div>
+      <p>Mohamed Ali</p>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li>
+          <p>Name</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li>
+          <p>Username</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li>
+          <p>Profile Picture</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li>
+          <p>Avatar</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="close-card" id="close-editprofil-card">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+  <!-- ****** edit profile card ******* -->
+  <!-- settings & privacy card -->
+  <div class="setting-privacy-container" id="setting-privacy-container">
+    <div class="card-header">
+      <h3>Privacy Preferences</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla dolorum aliquid asperiores, corrupti soluta, quibusdam neque facere id cupiditate quas exercitationem molestiae sequi impedit aperiam dolor? Minus, rem illum!</p>
+    </div>
+    <div class="card-options">
+      <ul>
+        <li>
+          <div class="option-info">
+            <h3>Name</h3>
+            <p>mohamde</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </label>
+        </li>
+        <li>
+          <div class="option-info">
+            <h3>Birthday</h3>
+            <p>2-10-2020</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </label>
+        </li>
+        <li>
+          <div class="option-info">
+            <h3>Recommendation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, accusantium?</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </label>
+        </li>
+        <li>
+          <div class="option-info">
+            <h3>Tokens and info sharing</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, pariatur.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="card-buttons">
+      <div>
+        <span>Cancel</span>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div>
+        <span>Save Preferences</span>
+        <i class="fa-solid fa-check"></i>
+      </div>
+    </div>
+    <div class="close-card" id="close-settingprivacy-card">
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </div>
+  <!-- ******** settings & privacy card ******** -->
+</div>
+<!-- ******* container cards *******  -->
 
     <main>
       <article>
