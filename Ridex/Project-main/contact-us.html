@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact-style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons from fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Ridex logo" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#featured-car" class="navbar-link" data-nav-link>
+                Catalog</a
+              >
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="header-contact">
+            <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+            <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+          </div>
+
+          <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+            <ion-icon name="car-outline"></ion-icon>
+
+            <span id="aria-label-txt">Catalog</span>
+          </a>
+
+          <a
+            href="#"
+            class="btn user-btn"
+            aria-label="Profile"
+            id="profile-icon"
+          >
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+
+          <!-- drop down card -->
+          <div class="dropDownCard" id="dropDownCard">
+            <div class="user-info">
+              <div>
+                <img
+                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+              </div>
+              <p class="user-name">Ahmed Ali</p>
+            </div>
+            <hr />
+            <ul>
+              <a href="#">
+                <li id="signup">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/user.png" alt="" />
+                      </div>
+                      <p>Sign-Up</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li id="login">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/gear.png" alt="" />
+                      </div>
+                      <p>Login</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li id="edit-profile">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/mark.png" alt="" />
+                      </div>
+                      <p>Edit Profile</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li id="setting-privacy">
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img
+                          src="./assets/images/icons/night-mode.png"
+                          alt=""
+                        />
+                      </div>
+                      <p>Setting & Privacy</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div class="list-item">
+                    <div class="icon-and-text">
+                      <div class="list-item-icon">
+                        <img src="./assets/images/icons/exit.png" alt="" />
+                      </div>
+                      <p>Logout</p>
+                    </div>
+                    <div class="arrow-icon">
+                      <img src="./assets/images/icons/right-arrow.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <!-- end drop down card -->
+
+          <button
+            class="nav-toggle-btn"
+            data-nav-toggle-btn
+            aria-label="Toggle Menu"
+          >
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- container cards  -->
+    <div class="container-cards" id="container-cards">
+      <!-- Sign-Up -->
+      <div class="sign-up-container" id="sign-up-container">
+        <div class="form-header"><p>Sign Up</p></div>
+        <div class="form">
+          <form>
+            <div class="form-input">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-envelope-open"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-input password-field">
+              <div class="password-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="agree-terms" id="agree-terms" />
+              <label for="agree-terms"
+                >i read and agree to <span>Terms & Conditions</span></label
+              >
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>Already have an account?</p>
+            <a href="#">Sign in</a>
+          </div>
+        </div>
+        <div class="close-card" id="close-signup-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!--  ******* Sign-Up ******** -->
+      <!-- login card -->
+      <div class="login-container" id="login-container">
+        <div class="form-header"><p>Login</p></div>
+        <div class="form">
+          <form>
+            <div class="form-input">
+              <i class="fa-solid fa-envelope-open"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-input password-field">
+              <div class="password-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>i dont have an account !</p>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+        <div class="close-card" id="close-login-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!--  ******* login card ******** -->
+      <!-- edit profile card -->
+      <div class="edit-profile-container" id="edit-profile-container">
+        <div class="card-header">
+          <div class="user-image">
+            <img
+              src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Mohamed Ali</p>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>
+              <p>Name</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Username</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Profile Picture</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Avatar</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="close-card" id="close-editprofil-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!-- ****** edit profile card ******* -->
+      <!-- settings & privacy card -->
+      <div class="setting-privacy-container" id="setting-privacy-container">
+        <div class="card-header">
+          <h3>Privacy Preferences</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla
+            dolorum aliquid asperiores, corrupti soluta, quibusdam neque facere
+            id cupiditate quas exercitationem molestiae sequi impedit aperiam
+            dolor? Minus, rem illum!
+          </p>
+        </div>
+        <div class="card-options">
+          <ul>
+            <li>
+              <div class="option-info">
+                <h3>Name</h3>
+                <p>mohamde</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Birthday</h3>
+                <p>2-10-2020</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Recommendation</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi, accusantium?
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Tokens and info sharing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Mollitia, pariatur.
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="card-buttons">
+          <div>
+            <span>Cancel</span>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div>
+            <span>Save Preferences</span>
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="close-card" id="close-settingprivacy-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!-- ******** settings & privacy card ******** -->
+      <!-- Payment card -->
+      <div class="payment-container" id="payment-container">
+        <!-- payment -->
+        <div class="payment-card">
+          <div class="header-card"><h3>Visa</h3></div>
+          <form>
+            <div class="form-input">
+              <div class="">
+                <label for="card-number">card number</label>
+                <input
+                  type="number"
+                  name="card-number"
+                  id="card-number"
+                  placeholder="1234 1234 1234 1234"
+                  onKeyPress="if( this.value.length == 16 ) return false; "
+                />
+              </div>
+              <div class="">
+                <label for="card-cvc">cvc</label>
+                <input
+                  type="number"
+                  name="card-cvc"
+                  id="card-cvc"
+                  placeholder="388"
+                  onKeyPress="if( this.value.length == 3 ) return false; "
+                />
+              </div>
+            </div>
+            <div class="form-input">
+              <label for="holder-name">holder name</label>
+              <input type="text" name="holder-name" id="holder-name" />
+            </div>
+            <div class="form-input select-date">
+              <h3>expirtion date</h3>
+              <div class="select-inputs">
+                <select name="day" id="select-day">
+                  <option value="">Day</option>
+                </select>
+                <select name="month" id="select-month">
+                  <option value="">Month</option>
+                </select>
+                <select name="year" id="select-year">
+                  <option value="">Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="add-address" id="add-address">
+              <span>Address</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="form-btn"><button>Complete Payment</button></div>
+          </form>
+        </div>
+        <!-- ***** payment ***** -->
+        <!-- address and map -->
+        <div class="address-card" id="address-card">
+          <h3>Address</h3>
+          <div class="address-input">
+            <label for="">street</label>
+            <input type="text" />
+          </div>
+          <div class="address-input">
+            <label for="">city</label>
+            <input type="text" />
+          </div>
+          <div class="address-map" id="address-map"></div>
+        </div>
+        <!-- ***** address and map ***** -->
+        <!-- close button -->
+        <div class="close-card" id="close-payment-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!-- ******* Payment card ******* -->
+    </div>
+    <!-- ******* container cards *******  -->
+
+    <!--******************** content ********************* -->
+    <div class="contact-container">
+      <div class="contact-body">
+        <div class="contact-header">
+          <h3>Satisfaction Guaranteed</h3>
+          <div class="content">
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-check"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-footer">
+          <div class="title">Contact Us</div>
+          <div class="form-social-container">
+            <div class="form">
+                <form>
+                  <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="type anything"
+                  ></textarea>
+                  <button>send</button>
+                </form>
+              </div>
+              <div class="social-links">
+                <div class="">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>dev@email.com</span>
+                </div>
+                <div class="">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+20 1153 5588 55</span>
+                </div>
+                <div class="">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>cairo street</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+  - custom js link
+-->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dropDown.js"></script>
+    <script src="./assets/js/handlePayment.js"></script>
+
+    <!-- 
+  - ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
