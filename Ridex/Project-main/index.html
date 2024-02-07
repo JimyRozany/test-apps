@@ -1,4 +1,5 @@
-///6!DOCTYPE html>
+<!-- ///6!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +27,13 @@
       rel="stylesheet"
     />
     <!-- icons from fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -193,183 +200,278 @@
         </div>
       </div>
     </header>
-<!-- container cards  -->
-<div class="container-cards" id="container-cards">
-  <!-- Sign-Up -->
-  <div class="sign-up-container" id="sign-up-container">
-    <div class="form-header"><p>Sign Up</p></div>
-    <div class="form">
-      <form>
-        <div class="form-input">
-          <i class="fa-solid fa-user"></i>
-          <input type="text" placeholder="Name">
-        </div>
-        <div class="form-input">
-          <i class="fa-solid fa-envelope-open"></i>
-          <input type="email" placeholder="Email">
-        </div>
-        <div class="form-input password-field">
-          <div class="password-container">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Password">
+    <!-- container cards  -->
+    <div class="container-cards" id="container-cards">
+      <!-- Sign-Up -->
+      <div class="sign-up-container" id="sign-up-container">
+        <div class="form-header"><p>Sign Up</p></div>
+        <div class="form">
+          <form>
+            <div class="form-input">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="form-input">
+              <i class="fa-solid fa-envelope-open"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-input password-field">
+              <div class="password-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="agree-terms" id="agree-terms" />
+              <label for="agree-terms"
+                >i read and agree to <span>Terms & Conditions</span></label
+              >
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>Already have an account?</p>
+            <a href="#">Sign in</a>
           </div>
-          <i class="fa-solid fa-eye"></i>
         </div>
-        <div class="form-checkbox">
-          <input type="checkbox" name="agree-terms" id="agree-terms">
-          <label for="agree-terms">i read and agree to <span>Terms & Conditions</span></label>
+        <div class="close-card" id="close-signup-card">
+          <i class="fa-regular fa-circle-xmark"></i>
         </div>
-        <div class="submit-btn">
-          <button  type="submit">Create Account</button>
-        </div>
-      </form>
-      <div class="form-footer"><p>Already have an account? </p><a href="#">Sign in</a></div>
-    </div>
-    <div class="close-card" id="close-signup-card">
-      <i class="fa-regular fa-circle-xmark"></i>
-    </div>
-  </div>
-  <!--  ******* Sign-Up ******** -->
-  <!-- login card -->
-  <div class="login-container" id="login-container">
-    <div class="form-header"><p>Login</p></div>
-    <div class="form">
-      <form>
-        
-        <div class="form-input">
-          <i class="fa-solid fa-envelope-open"></i>
-          <input type="email" placeholder="Email">
-        </div>
-        <div class="form-input password-field">
-          <div class="password-container">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Password">
-          </div>
-          <i class="fa-solid fa-eye"></i>
-        </div>
-        <div class="form-checkbox">
-          <input type="checkbox" name="remember" id="remember">
-          <label for="remember">Remember me</label>
-        </div>
-        <div class="submit-btn">
-          <button  type="submit">Login</button>
-        </div>
-      </form>
-      <div class="form-footer"><p>i dont have an account ! </p><a href="#">Sign Up</a></div>
-    </div>
-    <div class="close-card" id="close-login-card">
-      <i class="fa-regular fa-circle-xmark"></i>
-    </div>
-  </div>
-  <!--  ******* login card ******** -->
-  <!-- edit profile card -->
-  <div class="edit-profile-container" id="edit-profile-container">
-    <div class="card-header">
-      <div class="user-image">
-        <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
       </div>
-      <p>Mohamed Ali</p>
-    </div>
-    <div class="card-body">
-      <ul>
-        <li>
-          <p>Name</p>
-          <i class="fa-solid fa-chevron-right"></i>
-        </li>
-        <li>
-          <p>Username</p>
-          <i class="fa-solid fa-chevron-right"></i>
-        </li>
-        <li>
-          <p>Profile Picture</p>
-          <i class="fa-solid fa-chevron-right"></i>
-        </li>
-        <li>
-          <p>Avatar</p>
-          <i class="fa-solid fa-chevron-right"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="close-card" id="close-editprofil-card">
-      <i class="fa-regular fa-circle-xmark"></i>
-    </div>
-  </div>
-  <!-- ****** edit profile card ******* -->
-  <!-- settings & privacy card -->
-  <div class="setting-privacy-container" id="setting-privacy-container">
-    <div class="card-header">
-      <h3>Privacy Preferences</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla dolorum aliquid asperiores, corrupti soluta, quibusdam neque facere id cupiditate quas exercitationem molestiae sequi impedit aperiam dolor? Minus, rem illum!</p>
-    </div>
-    <div class="card-options">
-      <ul>
-        <li>
-          <div class="option-info">
-            <h3>Name</h3>
-            <p>mohamde</p>
+      <!--  ******* Sign-Up ******** -->
+      <!-- login card -->
+      <div class="login-container" id="login-container">
+        <div class="form-header"><p>Login</p></div>
+        <div class="form">
+          <form>
+            <div class="form-input">
+              <i class="fa-solid fa-envelope-open"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-input password-field">
+              <div class="password-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>i dont have an account !</p>
+            <a href="#">Sign Up</a>
           </div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round">
-              <i class="fa-solid fa-check"></i>
-            </span>
-          </label>
-        </li>
-        <li>
-          <div class="option-info">
-            <h3>Birthday</h3>
-            <p>2-10-2020</p>
-          </div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round">
-              <i class="fa-solid fa-check"></i>
-            </span>
-          </label>
-        </li>
-        <li>
-          <div class="option-info">
-            <h3>Recommendation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, accusantium?</p>
-          </div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round">
-              <i class="fa-solid fa-check"></i>
-            </span>
-          </label>
-        </li>
-        <li>
-          <div class="option-info">
-            <h3>Tokens and info sharing</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, pariatur.</p>
-          </div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round">
-              <i class="fa-solid fa-check"></i>
-            </span>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div class="card-buttons">
-      <div>
-        <span>Cancel</span>
-        <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="close-card" id="close-login-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
       </div>
-      <div>
-        <span>Save Preferences</span>
-        <i class="fa-solid fa-check"></i>
+      <!--  ******* login card ******** -->
+      <!-- edit profile card -->
+      <div class="edit-profile-container" id="edit-profile-container">
+        <div class="card-header">
+          <div class="user-image">
+            <img
+              src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Mohamed Ali</p>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>
+              <p>Name</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Username</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Profile Picture</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <p>Avatar</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="close-card" id="close-editprofil-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
       </div>
+      <!-- ****** edit profile card ******* -->
+      <!-- settings & privacy card -->
+      <div class="setting-privacy-container" id="setting-privacy-container">
+        <div class="card-header">
+          <h3>Privacy Preferences</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla
+            dolorum aliquid asperiores, corrupti soluta, quibusdam neque facere
+            id cupiditate quas exercitationem molestiae sequi impedit aperiam
+            dolor? Minus, rem illum!
+          </p>
+        </div>
+        <div class="card-options">
+          <ul>
+            <li>
+              <div class="option-info">
+                <h3>Name</h3>
+                <p>mohamde</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Birthday</h3>
+                <p>2-10-2020</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Recommendation</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi, accusantium?
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+            <li>
+              <div class="option-info">
+                <h3>Tokens and info sharing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Mollitia, pariatur.
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="card-buttons">
+          <div>
+            <span>Cancel</span>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div>
+            <span>Save Preferences</span>
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="close-card" id="close-settingprivacy-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!-- ******** settings & privacy card ******** -->
+      <!-- Payment card -->
+      <div class="payment-container" id="payment-container">
+        <!-- payment -->
+        <div class="payment-card">
+          <div class="header-card"><h3>Visa</h3></div>
+          <form>
+            <div class="form-input">
+              <div class="">
+                <label for="card-number">card number</label>
+                <input
+                  type="number"
+                  name="card-number"
+                  id="card-number"
+                  placeholder="1234 1234 1234 1234"
+                  onKeyPress="if( this.value.length == 16 ) return false; "
+                />
+              </div>
+              <div class="">
+                <label for="card-cvc">cvc</label>
+                <input
+                  type="number"
+                  name="card-cvc"
+                  id="card-cvc"
+                  placeholder="388"
+                  onKeyPress="if( this.value.length == 3 ) return false; "
+                />
+              </div>
+            </div>
+            <div class="form-input">
+              <label for="holder-name">holder name</label>
+              <input type="text" name="holder-name" id="holder-name" />
+            </div>
+            <div class="form-input select-date">
+              <h3>expirtion date</h3>
+              <div class="select-inputs">
+                <select name="day" id="select-day">
+                  <option value="">Day</option>
+                </select>
+                <select name="month" id="select-month">
+                  <option value="">Month</option>
+                </select>
+                <select name="year" id="select-year">
+                  <option value="">Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="add-address" id="add-address">
+              <span>Address</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="form-btn"><button>Complete Payment</button></div>
+          </form>
+        </div>
+        <!-- ***** payment ***** -->
+        <!-- address and map -->
+        <div class="address-card" id="address-card">
+          <h3>Address</h3>
+          <div class="address-input">
+            <label for="">street</label>
+            <input type="text" >
+          </div>
+          <div class="address-input">
+            <label for="">city</label>
+            <input type="text" >
+          </div>
+          <div class="address-map" id="address-map"></div>
+        </div>
+        <!-- ***** address and map ***** -->
+        <!-- close button -->
+        <div class="close-card" id="close-payment-card">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+      <!-- ******* Payment card ******* -->
     </div>
-    <div class="close-card" id="close-settingprivacy-card">
-      <i class="fa-regular fa-circle-xmark"></i>
-    </div>
-  </div>
-  <!-- ******** settings & privacy card ******** -->
-</div>
-<!-- ******* container cards *******  -->
+    <!-- ******* container cards *******  -->
 
     <main>
       <article>
@@ -508,7 +610,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-1">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -572,7 +674,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-2">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -636,7 +738,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-3">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -700,7 +802,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-4">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -764,7 +866,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-5">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -828,7 +930,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
-                      <button class="btn">Rent now</button>
+                      <button class="btn" id="btn-rent-6">Rent now</button>
                     </div>
                   </div>
                 </div>
@@ -1109,7 +1211,6 @@
         </section>
       </article>
     </main>
-
     <!-- 
     - #FOOTER
   -->
@@ -1263,6 +1364,7 @@
   -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/dropDown.js"></script>
+    <script src="./assets/js/handlePayment.js"></script>
 
     <!-- 
     - ionicon link
