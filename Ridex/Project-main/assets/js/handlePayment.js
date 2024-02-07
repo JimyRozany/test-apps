@@ -61,5 +61,7 @@ const closeBtn = document.querySelector("#close-payment-card")
 closeBtn.addEventListener("click" ,()=>{
   containerCards.style.display = "none";
   paymentContainer.style.display = "none";
+  addressCard.style.display = "none" 
+  paymentContainer.style.width = "400px"
 })
 
